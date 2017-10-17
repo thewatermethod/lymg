@@ -1,0 +1,224 @@
+/*
+Theme Name: Lane Yacht Management Group
+Theme URI: https://www.whalingcityweb.com
+Author: Matt Bevilacqua/Whaling City Web
+Author URI: https://www.whalingcityweb.com
+Description: Respnsive bootstrap based theme for LYMG
+Version: 1.1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: understrap
+Tags:
+
+
+Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc. and Twitter Bootstrap (getbootstrap.com)
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Prefixer
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+    ## Posts and pages
+	## Asides
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+# Custom Styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Less Vendor Prefixer
+--------------------------------------------------------------*/
+
+@import 'less/prefixer.less';
+
+/*--------------------------------------------------------------
+# Less Mixins and Variables
+--------------------------------------------------------------*/
+
+@import 'less/vars.less'; 
+
+/*--------------------------------------------------------------
+# Normalize
+--------------------------------------------------------------*/
+
+@import 'less/normalize.less';
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+@import 'less/typography.less';
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+
+@import 'less/elements.less';
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+
+@import 'less/forms.less';
+
+/*--------------------------------------------------------------
+# Navigation
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+
+@import 'less/links.less';
+
+/*--------------------------------------------------------------
+## Menus
+--------------------------------------------------------------*/
+
+@import 'less/navigation.less';
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+
+@import 'less/access.less';
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+
+@import 'less/aligns.less';
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+
+@import 'less/clearings.less';
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+
+@import 'less/widgets.less';
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+
+@import 'less/posts.less';
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+
+@import 'less/asides.less';
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+
+@import 'less/comments.less';
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+
+@import 'less/infinite.less';
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+
+@import 'less/media.less';
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+
+@import 'less/captions.less';
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+
+@import 'less/gallery.less';
+
+/*--------------------------------------------------------------
+## Custom Styles
+--------------------------------------------------------------*/
+a:hover, a:visited{
+	color: #BF360C;
+}
+body{
+	background: #BBDEFB;
+	//background: @nauticalblue;
+	//background: linear-gradient(100deg, lightblue, navy, @nauticalblue);
+}
+header#masthead {
+	background: #ebf1f6; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ebf1f6 0%, #d5ebfb 65%, #d5ebfb 68%, #abd3ee 72%, #89c3eb 79%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6), color-stop(65%,#d5ebfb), color-stop(68%,#d5ebfb), color-stop(72%,#abd3ee), color-stop(79%,#89c3eb)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ebf1f6 0%,#d5ebfb 65%,#d5ebfb 68%,#abd3ee 72%,#89c3eb 79%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ebf1f6 0%,#d5ebfb 65%,#d5ebfb 68%,#abd3ee 72%,#89c3eb 79%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ebf1f6 0%,#d5ebfb 65%,#d5ebfb 68%,#abd3ee 72%,#89c3eb 79%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ebf1f6 0%,#d5ebfb 65%,#d5ebfb 68%,#abd3ee 72%,#89c3eb 79%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6', endColorstr='#89c3eb',GradientType=0 ); /* IE6-9 */
+}
+
+div#content{
+	background: white;
+}
+
+@import 'less/header.less';
+
+footer#colophon{
+	background: rgb(64, 64, 64);
+	color: white;
+	a{
+		color: #fff;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+#secondary{
+	margin-top: 25px;
+}
+
+button, input[type="submit"]{
+	background: #1976D2;
+	text-transform: uppercase;
+	border:none;
+	outline: none;
+	text-shadow: none;
+	padding: 12px 18px;
+	color: white;
+	box-shadow: 4px 4px 3px 0 #ccc;
+	&:hover{
+		box-shadow: 4px 4px 3px 0 #ccc;
+		border-color: transparent;
+		background: lighten(#1976D2, 10%)
+	}
+}
