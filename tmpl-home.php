@@ -1,4 +1,4 @@
-<?php // Template Name: Home ?>
+<?php // Template Name: Home (One Column) ?>
 
 <?php 
 /**
@@ -79,5 +79,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-		
+
 <?php get_footer(); ?>
