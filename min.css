@@ -736,6 +736,7 @@ object {
 --------------------------------------------------------------*/
 .gallery {
   display: flex;
+  flex-wrap: flex;
   margin-bottom: 1.5em;
 }
 .gallery-item {
