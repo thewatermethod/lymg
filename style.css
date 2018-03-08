@@ -1,10 +1,10 @@
 /*
 Theme Name: Lane Yacht Management Group
-Theme URI: http://www.capecodwebfoundry.com
-Author: Matt Bevilacqua/Cape Cod Web Foundry
-Author URI: http://www.capecodwebfoundry.com
+Theme URI: https://www.whalingcityweb.com
+Author: Matt Bevilacqua/Whaling City Web
+Author URI: https://www.whalingcityweb.com
 Description: Respnsive bootstrap based theme for LYMG
-Version: 1.0.0
+Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: understrap
@@ -518,7 +518,7 @@ a:active {
   }
   .main-navigation li {
     border: 1px solid white;
-    padding: 6px;
+    padding: 10px 6px;
     text-align: center;
     width: 100%;
   }
@@ -729,6 +729,7 @@ object {
 ## Galleries
 --------------------------------------------------------------*/
 .gallery {
+  display: flex;
   margin-bottom: 1.5em;
 }
 .gallery-item {
