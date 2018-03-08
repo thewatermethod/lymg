@@ -730,7 +730,7 @@ object {
 --------------------------------------------------------------*/
 .gallery {
   display: flex;
-  flex-wrap: flex;
+  flex-wrap: wrap;
   margin-bottom: 1.5em;
 }
 .gallery-item {
