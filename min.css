@@ -140,6 +140,9 @@ img {
 svg:not(:root) {
   overflow: hidden;
 }
+figure {
+  margin: 1em 40px;
+}
 hr {
   box-sizing: content-box;
   height: 0;
@@ -434,7 +437,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-  color: #0d47a1;
+  color: royalblue;
 }
 a:visited {
   color: purple;
@@ -464,7 +467,7 @@ a:active {
 }
 .main-navigation li {
   display: inline-block;
-  padding: 10px;
+  padding: 20px;
   font-size: 14px;
   border-right: 1px solid white;
   text-transform: uppercase;
@@ -732,6 +735,8 @@ object {
 ## Galleries
 --------------------------------------------------------------*/
 .gallery {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 1.5em;
 }
 .gallery-item {
@@ -741,7 +746,9 @@ object {
   width: 100%;
 }
 .gallery-columns-2 .gallery-item {
+  margin: auto;
   max-width: 50%;
+  width: 50%;
 }
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
@@ -768,27 +775,6 @@ object {
   display: block;
 }
 /*--------------------------------------------------------------
-## Callout
---------------------------------------------------------------*/
-.callout {
-  display: block;
-  color: white;
-  font-family: 1.5em;
-  padding: 1em;
-  margin: auto;
-  max-width: 600px;
-  text-align: center;
-  text-transform: uppercase;
-}
-div.callout {
-  background: #d50000;
-}
-a.callout {
-  background: royalblue;
-  border-bottom: 2px solid #d50000;
-  text-decoration: underline;
-}
-/*--------------------------------------------------------------
 ## Custom Styles
 --------------------------------------------------------------*/
 a:hover,
@@ -801,19 +787,19 @@ body {
 header#masthead {
   background: #ebf1f6;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #ebf1f6 0%, #d5ebfb 65%, #d5ebfb 68%, #abd3ee 72%, royalblue 79%);
+  background: -moz-linear-gradient(top, #ebf1f6 0%, #d5ebfb 65%, #d5ebfb 68%, #abd3ee 72%, #89c3eb 79%);
   /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ebf1f6), color-stop(65%, #d5ebfb), color-stop(68%, #d5ebfb), color-stop(72%, #abd3ee), color-stop(79%, royalblue));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ebf1f6), color-stop(65%, #d5ebfb), color-stop(68%, #d5ebfb), color-stop(72%, #abd3ee), color-stop(79%, #89c3eb));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #ebf1f6 0%, #d5ebfb 65%, #d5ebfb 68%, #abd3ee 72%, royalblue 79%);
+  background: -webkit-linear-gradient(top, #ebf1f6 0%, #d5ebfb 65%, #d5ebfb 68%, #abd3ee 72%, #89c3eb 79%);
   /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #ebf1f6 0%, #d5ebfb 65%, #d5ebfb 68%, #abd3ee 72%, royalblue 79%);
+  background: -o-linear-gradient(top, #ebf1f6 0%, #d5ebfb 65%, #d5ebfb 68%, #abd3ee 72%, #89c3eb 79%);
   /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #ebf1f6 0%, #d5ebfb 65%, #d5ebfb 68%, #abd3ee 72%, royalblue 79%);
+  background: -ms-linear-gradient(top, #ebf1f6 0%, #d5ebfb 65%, #d5ebfb 68%, #abd3ee 72%, #89c3eb 79%);
   /* IE10+ */
-  background: linear-gradient(to bottom, #ebf1f6 0%, #d5ebfb 65%, #d5ebfb 68%, #abd3ee 72%, royalblue 79%);
+  background: linear-gradient(to bottom, #ebf1f6 0%, #d5ebfb 65%, #d5ebfb 68%, #abd3ee 72%, #89c3eb 79%);
   /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='royalblue', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ebf1f6', endColorstr='#89c3eb', GradientType=0);
   /* IE6-9 */
 }
 div#content {

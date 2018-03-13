@@ -726,6 +726,8 @@ object {
 ## Galleries
 --------------------------------------------------------------*/
 .gallery {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 1.5em;
 }
 .gallery-item {
@@ -735,7 +737,9 @@ object {
   width: 100%;
 }
 .gallery-columns-2 .gallery-item {
+  margin: auto;
   max-width: 50%;
+  width: 50%;
 }
 .gallery-columns-3 .gallery-item {
   max-width: 33.33%;
