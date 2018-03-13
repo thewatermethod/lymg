@@ -156,6 +156,32 @@ require get_template_directory() . '/inc/jetpack.php';
 
 add_theme_support( 'post-thumbnails' );
 
+
+/*
+*	This code adds the callout shortcode
+*/
+
+function lymg_callout( $atts, $content = "" ) {
+	
+	// Attributes
+	$atts = shortcode_atts(
+		array(
+			'url' => null,
+		),
+		$atts,
+		'callout'
+	);
+
+	if( $atts['url'] == null ){
+		return '<div class="callout box-shadow"><span class="callout-inner">'.$content.'</span></div>';
+	} 
+
+	return '<a href="'.$atts['url'].'" class="callout box-shadow"><span class="callout-inner">'.$content.'</span></a>';
+}
+
+add_shortcode( 'callout', 'lymg_callout' );
+add_filter( 'widget_text', 'do_shortcode' );
+
 /*
 *	This code adds support for the boats and services info on the homepage
 */
